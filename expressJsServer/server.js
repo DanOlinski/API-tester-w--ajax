@@ -25,9 +25,9 @@ app.get('/', (req, res) => {
 });
 
 //Below is a route that displays info from the database
-//Rout url: http://localhost:8110/notes
-const notes = require('./routes/allNotes');
-app.use('/notes', notes);
+//Rout url: http://localhost:8110/tester
+const tester = require('./routes/testApi.js');
+app.use('/tester', tester);
 
 app.listen(PORT, () => {
   console.log(`ExpressJs Template Server listening on port ${PORT}`);
